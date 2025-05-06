@@ -1,0 +1,17 @@
+[package]
+name = "crawler"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+base64 = { version = "0.22" }
+cookie = { version = "0.18" }
+digest = { version = "0.10" }
+http = { version = "1" }
+md-5 = { version = "0.10" }
+rand = { version = "0.9", features = ["thread_rng"] }
+reqwest = { version = "0.12", features = ["cookies", "json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1" }
+tokio = { version = "1", features = ["macros", "rt"] }
+url = { version = "2" }
